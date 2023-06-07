@@ -1,0 +1,28 @@
+ul{
+    @include  list-none;
+}
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+button{
+    @include  button-none;
+    
+    height: 22px;
+width: 23px;
+margin-left: auto;
+
+cursor: pointer;
+}
+
+.body__container{
+
+     max-width: 470px;
+    margin: 0 auto;
+    @media (min-width:$tablet-size){
+       
+        max-width: 1000px;
+
+    }
+}

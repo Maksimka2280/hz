@@ -1,0 +1,21 @@
+.main-header__img{
+    position: absolute;
+    top: 0%;
+
+    @include centering-width-pseudo-element;
+}
+.main-header{
+    padding: 17px 0px;
+
+}
+.main-header__button{
+    background: url(./../../public/img/icon-menu.svg);
+    display: block;
+    margin-right: 20px;
+    @media (min-width:$tablet-size){
+        display:none;
+        
+    }
+    
+}
+

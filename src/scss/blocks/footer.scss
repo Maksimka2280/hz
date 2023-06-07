@@ -1,0 +1,87 @@
+.main-footer__title--SEDONA {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  /* identical to box height, or 124% */
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  
+}
+
+.main-footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  @media(min-width: $tablet-size){
+    padding-bottom: 21px;
+    padding-top: 16px;
+
+   
+   }
+  
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  background: #81b3d2;
+ 
+ 
+}
+
+.authonr {
+  display: flex;
+
+  width: fit-content;
+  gap: 7px;
+  margin-bottom: 21px;
+  margin: 0 auto;
+   padding-top: 21px;
+    padding-bottom: 21px;
+  @media(min-width: $tablet-size){
+    margin-bottom: 0;
+    margin: 0;
+   
+   }
+}
+
+.authonr__img {
+  width: 60px;
+  height: auto;
+  width: 100%;
+}
+
+.authonr__text {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.main-footer--container{
+  @media(min-width: $tablet-size){
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 45px;
+    padding-right: 45px;
+    align-items: center;
+   }
+}
