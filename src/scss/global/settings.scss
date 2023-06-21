@@ -25,4 +25,10 @@ cursor: pointer;
         max-width: 1000px;
 
     }
+
+    @media (min-width:$desktop-size){
+       
+        max-width: none;
+
+    }
 }

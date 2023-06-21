@@ -33,8 +33,7 @@
   padding-right: 19px;
   padding-bottom: 40px;
   text-align: center;
-  @media (min-width: $tablet-size) {
-  }
+ 
 }
 .benefit {
   &:first-of-type {
@@ -92,7 +91,7 @@
     left: 118px;
     }
     left: 20px;
-   
+     background-size: contain !important;
     @media (min-width: $tablet-size) {
       width: 72px;
       height: 75px;
