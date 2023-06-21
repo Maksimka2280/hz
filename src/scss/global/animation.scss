@@ -1,0 +1,11 @@
+.block-animation {
+    transition: 0.75s;
+  &.main-header__item {
+    transform: translateY(55px);
+    opacity: 0;
+    &.block-animation--active{
+        transform:translateY(0px);
+        opacity: 1;
+    }
+  }
+}
