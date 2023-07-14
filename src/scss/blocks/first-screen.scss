@@ -38,10 +38,14 @@
   color: #333333;
   @media (min-width:$tablet-size){
     font-size: 14px;
+    
+    max-width: 500px;
+    margin: 0 auto;
   }
   @media (min-width: $desktop-size) {
-   max-width: 1280px;
+   
    padding-bottom: 35px;
+  
   }
 }
 

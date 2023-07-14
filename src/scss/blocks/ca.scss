@@ -32,6 +32,15 @@
   color: #ffffff;
   margin: 0 auto;
   display: block;
+   transition: 0.5s;
+
+
+   
+  &:hover{
+    color: chartreuse;
+     transition: 0.5s;
+  }
+
 
   @media (min-width: $tablet-size){
    width: 458px;

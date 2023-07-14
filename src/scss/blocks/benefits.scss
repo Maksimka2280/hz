@@ -33,7 +33,11 @@
   padding-right: 19px;
   padding-bottom: 40px;
   text-align: center;
- 
+  @media (min-width: $desktop-size) {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   }
 }
 .benefit {
   &:first-of-type {
@@ -72,6 +76,8 @@
   text-transform: uppercase;
 
   color: #333333;
+
+
 }
 
 .inner-benefit {
@@ -88,18 +94,16 @@
   &::before {
     @include defaul-pseudo-element(40px);
     @media (min-width: $tablet-size) {
-    left: 118px;
+      left: 118px;
     }
     left: 20px;
-     background-size: contain !important;
+    background-size: contain !important;
     @media (min-width: $tablet-size) {
       width: 72px;
       height: 75px;
       top: 0;
 
       @include centering-width-pseudo-element;
-     
-      
     }
   }
   &:nth-of-type(1) {
@@ -120,6 +124,12 @@
       background: url(./../../public/img/icon-gift.svg) no-repeat center center;
     }
   }
+  @media (min-width: $desktop-size) {
+   
+    
+   margin-left: auto;
+   margin-right: auto;
+   }
 }
 
 .benefit__text--black {
@@ -134,43 +144,41 @@
 
 .benefit--gray {
   background-color: #eeeeee;
-  &::before{
+  &::before {
     content: none !important;
   }
 
   &:not(:last-of-type) {
     & .benefit--gray-container {
       border-bottom: 1px solid #d6d6d6;
-     
 
-      
-      @media(min-width: $tablet-size){
-       border-bottom: none;
+      @media (min-width: $tablet-size) {
+        border-bottom: none;
       }
     }
   }
 }
 .benefit--gray-container {
- 
   padding: 26px 0;
   margin: 0 18px;
-
- @media (min-width: $tablet-size) {
-     padding-left: 40px;
-  padding-right: 40px;
-  };
+ 
+ 
+  @media (min-width: $tablet-size) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .inner-benefits {
   padding-bottom: 137px;
   padding-right: 31px;
-    
+
   @media (min-width: $tablet-size) {
     display: flex;
     text-align: center;
-   gap: 70px;
-   padding-left: 31px;
-   padding-right: 30px;
+    gap: 70px;
+    padding-left: 31px;
+    padding-right: 30px;
   }
 }
 
@@ -181,38 +189,43 @@
   @media (min-width: $tablet-size) {
     max-height: none;
     height: 100%;
-   
   }
 }
 
 .benefit__tablet-container {
   @media (min-width: $tablet-size) {
     display: grid;
-  grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
- 
-
 }
 
 .benefit__tablet-container--2 {
+  
   @media (min-width: $tablet-size) {
     display: grid;
-  grid-template-columns: 2fr 1fr;
-}
+    grid-template-columns: 2fr 1fr;
   }
-  
-.benefit__text-container--order2 {
-  @media (min-width: $tablet-size) {
-     order: 2; 
-  }
- 
 }
 
-.benefit__container--grey2{
+.benefit__text-container--order2 {
   @media (min-width: $tablet-size) {
-     display: flex;
+    order: 2;
   }
- 
+}
+
+.benefit__container--grey2 {
+
+  
+
+  @media (min-width: $tablet-size) {
+    display: flex;
+  }
+  
+ @media (min-width: $desktop-size) {
+   
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }
 

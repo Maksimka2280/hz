@@ -85,3 +85,20 @@
     align-items: center;
    }
 }
+
+.main-footer__link{
+ 
+ & path{
+     transition:0.5s;
+    }
+  &:hover{
+   
+  & path{
+      fill: chartreuse;
+     transition:0.5s;
+    
+    
+  }
+
+  }
+}
