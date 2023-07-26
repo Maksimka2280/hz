@@ -4,6 +4,7 @@ ul {
 body {
   margin: 0%;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden
 }
 button {
   @include button-none;
