@@ -43,7 +43,7 @@ const Visible = function (target) {
   
   export const startAnimation = () => {
     addBaseAnimationClass(
-      '.main-header__item',
+     
       '.main-header__img',
       '.first-screen__main-container',
       '.ca',

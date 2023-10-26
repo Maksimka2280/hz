@@ -5,6 +5,7 @@ body {
   margin: 0%;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden
+  
 }
 button {
   @include button-none;
@@ -27,3 +28,15 @@ button {
     max-width: none;
   }
 }
+
+fieldset{
+  border: none;
+  padding: 0;
+}
+
+
+input{
+  border: none;
+  
+}
+
