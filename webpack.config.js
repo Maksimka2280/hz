@@ -3,11 +3,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { 'main': './src/js/main.js',
-   'index':  './src/js/index.js', 
-     'form':  './src/js/form.js',},
+  entry:   './src/js/main.js',
   output: {
-    filename: '[name].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
